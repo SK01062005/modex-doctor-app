@@ -9,7 +9,7 @@ body {
   cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbklEQVQ4y6WTQQqAMAwE9/6H8+c1/kGpHgQFEU9lYROXpI0QW+NGEACwgAk84QZq1j0E7uC38aogC6iY0zIEyQIVF+4S+A6Y+H8Eak5cEci/Y51CU5AEeIEdPKA+fU6g5o4bCMy7gJ/73XwAW3h0L8GjKtkAAAAASUVORK5CYII='), auto;
 }
 
-/* --- ALL ANIMATIONS --- */
+/* --- ANIMATIONS --- */
 @keyframes spin { 
   0% { transform: rotate(0deg); } 
   100% { transform: rotate(360deg); } 
@@ -34,19 +34,7 @@ body {
   100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
 }
 
-/* Utility Classes */
-.fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-.heartbeat {
-  animation: heartbeat 1.5s ease-in-out infinite both;
-}
-
-.spinner {
-  animation: spin 1s linear infinite;
-}
-
-.pulse-button:hover {
-  animation: pulse 1.5s infinite;
-}
+.fade-in { animation: fadeIn 0.6s ease-out forwards; }
+.heartbeat { animation: heartbeat 1.5s ease-in-out infinite both; }
+.spinner { animation: spin 1s linear infinite; }
+.pulse-button:hover { animation: pulse 1.5s infinite; }
