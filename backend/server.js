@@ -1,16 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const pool = require('./src/config/db');
-const bookingRoutes = require('./src/routes/bookingRoutes'); // Import Routes
+const bookingRoutes = require('./src/routes/bookingRoutes'); // Import the routes
 require('dotenv').config();
 
 const app = express();
 
-app.use(express.json()); // Allow reading JSON body
+app.use(express.json());
 app.use(cors());
 
-// Use the routes
-app.use('/api', bookingRoutes);
+// CRITICAL LINE: This tells the server to use your routes starting with /api
+app.use('/api', bookingRoutes); 
 
 // Test Route
 app.get('/', async (req, res) => {
